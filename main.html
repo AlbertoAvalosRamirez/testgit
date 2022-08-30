@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
@@ -8,23 +10,36 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='js/c1.js'></script> 
     <script src='js/product.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
-    <div id="app">
-        <section id="container">
-            <formm id="form">
-                <label>Nùmero</label><input type="text " id=" number"><br>
-                <label>Còdigo</label><input type="text " id=" code"> <br>
-                <label>Cantidad</label><input type="number " id=" cant"> <br>
-                <label>Precio</label><input type="number" id=" price"><br>
-                <button type="submit" id="add">Agregar</button>
-                <button type="submit" id="inOrder">Buscar</button>
-                <button type="submit" id="postOrder">InOrder</button>
-                <button type="reset" id="preOrder">Reset</button>
-
-            </form>
-        </section>
-    </div>
+    <div class = "row">
+        <div id="app">
+            <section id="container">
+                <form id="form">
+                    <div class="row">
+                        <div class="input-field col s12">
+                          <input placeholder="Code" id="code" type="text" class="validate">
+                        </div>
+                        <div class="input-field col s12">
+                          <input  placeholder="Name" id="name" type="text" class="validate">
+                        </div>
+                        <div class="input-field col s12">
+                            <input  placeholder="Name" id="cant"type="text" class="validate">
+                        </div>
+                        <div class="input-field col s12">
+                            <input  placeholder="Name" id="price" type="text" class="validate">
+                        </div>
+                    </div>
+                    <button class="btn waves-effect waves-light green lighten-1 " type="submit" id="add">Agregar</button>
+                    <button class="btn waves-effect waves-light amber darken-3 " id="preOrder">Buscar</button>
+                    <button class="btn waves-effect waves-light amber darken-4"  id="inOrder">InOrder</button>
+                    <button class="btn waves-effect waves-light orange accent-2" id="postOrder">Reset</button>
+                    <button class="btn waves-effect waves-light red darken-1" type="reset" id="reset">Reset</button>
+                </form>
+            </section>
+        </div>
+    </div>     
     <div id="detalles">
 
     </div>
